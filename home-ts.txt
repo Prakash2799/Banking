@@ -1,0 +1,11 @@
+import { Component, ViewChild } from '@angular/core';
+import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
+@Component({
+  selector: 'app-routing-demo',
+  templateUrl: './routing-demo.component.html',
+  styleUrls: ['./routing-demo.component.css']
+})
+export class RoutingDemoComponent {
+    public bank = ["assets/images/bank_1.jpg","assets/images/bank_officers.jpg","assets/images/coin_track.jpg","assets/images/payments.jpg","assets/images/ethics.jpg","assets/images/gold_loans.jpg"]
+
+}

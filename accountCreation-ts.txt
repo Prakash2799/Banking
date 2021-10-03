@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+import { accountCreation } from './models/accountCreation';
+
+@Component({
+  selector: 'app-root',
+  templateUrl:'./app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'Banking';
+  public accCreation = new accountCreation('Banking','Om Prakash D','','',9080856755,'',564849839,'','','','','','',635104,'','','','','',654732,'','',903820);
+}

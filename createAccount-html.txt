@@ -1,0 +1,130 @@
+
+<div class = "container-fluid mb-5">
+<h1 style="text-align:center;margin-top:40px;">Create  a Savings Account</h1>
+    <form #createAccount="ngForm">
+      <div class = "form-group">
+        <label><strong>Title</strong></label>
+        <input  #title="ngModel" [class.is-invalid]="title.invalid"  class="form-control is-invalid"   type="text" name="Title" [(ngModel)]="accCreation.Title"/>
+      </div>
+      <div class = "form-group">
+        <label><strong>First Name</strong></label>
+        <input class="form-control" #fname="ngModel"  [class.is-invalid]="fname.invalid && fname.touched" type="text" name="firstName" [(ngModel)]="accCreation.firstName"/>
+      </div>
+      <div class = "form-group">
+        <label><strong>Middle Name</strong></label>
+        <input class="form-control" type="text" name="middleName" [(ngModel)]="accCreation.lastName"/>
+      </div>
+      <div class = "form-group">
+        <label><strong>Last Name</strong></label>
+        <input class="form-control" type="text" name="lastName" [(ngModel)]="accCreation.middleName"/>
+      </div>
+      <div class = "form-group">
+        <label><strong>Father's Name</strong></label>
+        <input class="form-control" type="text" name="fatherName" [(ngModel)]="accCreation.lastName"/>
+      </div>
+      <div class = "form-group">
+        <label><strong>Mobile Number</strong></label>
+        <input class="form-control" #mobile="ngModel" pattern="^\D{10}$"  [class.is-invalid]="mobile.invalid && mobile.touched" type="tel" name="mobileNumber" [(ngModel)]="accCreation.mobileNumber"/>
+      </div>
+      <div class = "form-group">
+        <label><strong>Email ID</strong></label>
+        <input  class="form-control"  type="email" name="emailId" [(ngModel)]="accCreation.emailId" required/>
+      </div>
+      <div class = "form-group">
+        <label><strong>Aadhar Card Number</strong></label>
+        <input class="form-control" type="text" name="aadharNumber" [(ngModel)]="accCreation.aadharNumber"/>
+      </div>
+      <div class = "form-group">
+        <label><strong>DateOfBirth</strong></label>
+        <input class="form-control" type="text" name="dob" [(ngModel)]="accCreation.dob"/>
+      </div>
+        <div class="form-group" style="font-size: 20px;"><label><strong>Residential address</strong></label></div>
+      <div class = "form-group">
+          <label><strong>Address Line 1</strong></label>
+          <input class="form-control" required type="text" name="residentAddress1" [(ngModel)]="accCreation.residentAddress1"/>
+      </div>
+        <div class = "form-group">
+          <label><strong>Address Line 2</strong></label>
+          <input class="form-control" type="text" name="residentAddress2" [(ngModel)]="accCreation.residentAddress2"/>
+        </div>
+        <div class = "form-group">
+          <label><strong>LandMark</strong></label>
+          <input class="form-control" type="text" name="residentLandMark" [(ngModel)]="accCreation.residentLandMark"/>
+        </div>
+        <div class = "form-group">
+          <label><strong>State</strong></label>
+          <input class="form-control" type="text" name="residentState" [(ngModel)]="accCreation.residentState"/>
+        </div>
+        <div class = "form-group">
+          <label><strong>City</strong></label>
+          <input class="form-control" type="text" name="residentCity" [(ngModel)]="accCreation.residentState"/>
+        </div>
+        <div class = "form-group">
+          <label><strong>Pincode</strong></label>
+          <input class="form-control" type="text" name="residentPincode" [(ngModel)]="accCreation.residentPincode"/>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="address_same_as_residental"/>
+            <label>Permanent address same as Residential address</label>
+        </div>
+      <div class="form-group" style="font-size:20px;">
+        <label><strong>Permanent address</strong></label></div>
+      <div class = "form-group">
+          <label><strong>Address Line 1</strong></label>
+          <input class="form-control" required type="text" name="permanentAddress1" [(ngModel)]="accCreation.permanentAddress1"/>
+      </div>
+        <div class = "form-group">
+          <label><strong>Address Line 2</strong></label>
+          <input class="form-control" type="text" name="permanentAddress2" [(ngModel)]="accCreation.permanentAddress2"/>
+        </div>
+        <div class = "form-group">
+          <label><strong>LandMark</strong></label>
+          <input class="form-control" type="text" name="permanentLandMark" [(ngModel)]="accCreation.permanentLandMark"/>
+        </div>
+        <div class = "form-group">
+          <label><strong>State</strong></label>
+          <input class="form-control" type="text" name="permanentState" [(ngModel)]="accCreation.permanentState"/>
+        </div>
+        <div class = "form-group">
+          <label><strong>City</strong></label>
+          <input class="form-control" type="text" name="permanentCity" [(ngModel)]="accCreation.permanentCity"/>
+        </div>
+        <div class = "form-group">
+          <label><strong>Pincode</strong></label>
+          <input class="form-control" type="text" name="permanentPincode" [(ngModel)]="accCreation.permanentPincode"/>
+        </div>
+      <div class="form-group" style="font-size:20px;"> 
+        <label><strong>Occupation Details</strong></label>
+      </div>
+      <div class="form-group"> 
+        <label><strong>Occupation Type</strong></label>
+        <input type="text" class="form-control" name="occupationType" [(ngModel)]="accCreation.occupationType"/>
+      </div>
+      <div class="form-group"> 
+        <label><strong>Source Of Income</strong></label>
+        <input type="text" class="form-control" name="sourceofIncome" [(ngModel)]="accCreation.sourceofIncome"/>
+      </div>
+      <div class="form-group"> 
+        <label><strong> Annual Income</strong></label>
+        <input type="text" class="form-control" name="grossAnnualIncome" [(ngModel)]="accCreation.grossAnnualIncome"/>
+      </div>
+      <div class="form-group" style="font-size:20px;"> 
+        <label><strong>Debit/ATM Card</strong></label>
+      </div>
+      <div class="form-group"> 
+        <label><strong>Do you want a debit card?</strong></label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="netBankingFlag" >
+        <label>Opt for Net Banking</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="agreeFlag">
+        <label>I agree</label>
+      </div>
+      <div>
+        <button class="btn btn-primary btn-lg ">Submit</button>
+      </div>
+    </form>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,88 @@
+<ngb-carousel #carousel [interval]="2000">
+  <ng-template ngbSlide *ngFor="let img of bank; index as i">
+    <div class="carousel-caption">
+    </div>
+
+      <div class="picsum-img-wrapper">
+        <img [src]="img" alt="My image {{i + 1}} description" style="height:250px;width:100%">
+      </div>
+    
+  </ng-template>
+</ngb-carousel>
+<div class="container pt-5" >
+  <div class="row">
+    <div class="col-lg-4 pb-5">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/images/card.jpg" style="height:190px;" alt="Card image cap">
+          <div class="card-body">
+          <h2 class="card-title">Get Debit Cards</h2>
+          <p class="card-text">Truth is like a debit card . Pay first and Enjoy it Later.Create an account instantly and get your Platinum Debit Card for the transactions.You can withdraw upto 50 thousand in a day </p>
+          <h2 href="#" class="btn btn-primary">Debit Cards</h2>
+          </div>
+       </div>
+   </div>
+   <div class="col-lg-4 pb-5">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="assets/images/loans1.png" style="height:190px;" alt="Card image cap">
+      <div class="card-body">
+      <h2 class="card-title">Avail Gold Loan</h2>
+      <p class="card-text">Get the money you need,when you need it.Money in your within 20 minutes.Avail Gold Loan instantly for the best offers and discounts.Interest Rate starting from 9.50%</p>
+      <h2 href="#" class="btn btn-primary">Gold Loan</h2>
+      </div>
+   </div>
+</div>
+<div class="col-lg-4 pb-5">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="assets/images/insurance.jpg" style="height:190px;" alt="Card image cap">
+    <div class="card-body">
+    <h2 class="card-title">Insurance</h2>
+    <p class="card-text">Fun is like Life Insurance.The Older you get the more it Costs.Getting Insurance is your responsibility to your family and loved ones.You may hate it but it is your responsibility</p>
+    <h2 href="#" class="btn btn-primary">Insurance</h2>
+    </div>
+ </div>
+</div>
+  </div>
+  </div>
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-lg-4 pb-5">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="assets/images/credit.jpg"  style="height:190px;"alt="Card image cap">
+            <div class="card-body">
+            <h2 class="card-title">Get Credit Cards</h2>
+            <p class="card-text">Credit Cards are really great cheap resource of funds.Apply Credit cards instantly and enjoy its benefits.The interest rate is 1.90% and make use most of it. </p>
+            <h2 href="#" class="btn btn-primary">Credit Cards</h2>
+            </div>
+         </div>
+     </div>
+     <div class="col-lg-4 pb-5">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="assets/images/homeloan.jpg" style="height:190px;"alt="Card image cap">
+        <div class="card-body">
+        <h2 class="card-title">Avail Home Loan</h2>
+        <p class="card-text">Interest Rate starting with 6.50% per annum now thats the best deal on home loan.Maximum Loan amount upto 10 lakhs per annum.Apply Home loan instantly to enjoy the benefits.</p>
+        <h2  class="btn btn-primary">Home Loan</h2>
+        </div>
+     </div>
+  </div>
+  <div class="col-lg-4 pb-5">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="assets/images/mutual funds.jpg"style="height:190px;" alt="Card image cap">
+      <div class="card-body">
+      <h2 class="card-title">Mutual Fund</h2>
+      <p class="card-text">A mutual fund is a professionally-managed investment scheme.Invests your  money in stocks and enjoy the benefits such as portfolio management and fair pricing...</p>
+      <h2 class="btn btn-primary">Mutual fund</h2>
+      </div>
+   </div>
+  </div>
+    </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container-fluid p-3" style="background-color:#4a4de7;">
+<h2 style="color: aliceblue;padding-left:500px;padding-top:20px;">In case of any queries.Please write to <a href="#" style="color: aliceblue;"><u>http://www.support.peoplesbank.com</u></a></h2>
+<h2 style="color:aliceblue;padding-left:600px;">&copy; &nbsp;Copyright 2021.All Rights Reserved.</h2>
+<h2 style="padding-left:500px;color:aliceblue">Follow us at<a href="" style="transform:translateX(20px);position:relative" class="fa fa-facebook"></a>
+<a href="#"style="transform:translateX(40px);position:relative" class="fa fa-twitter"></a>
+<a href="#" style="transform:translateX(60px);position:relative"class="fa fa-google"></a>
+<a href="#" style="transform:translateX(80px);position:relative" class="fa fa-linkedin"></a></h2>
+</div>
